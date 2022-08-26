@@ -1,0 +1,12 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{entry_title}}
+{% endblock %}
+
+{% block body %}
+    {{ entry|safe}} 
+    {% comment %} safe content for django template language {% endcomment %}
+    <br><br>
+    <a href="{% url 'edit' title=entry_title %}" class="btn btn-light" role="button">Edit Content</a>
+{% endblock %}

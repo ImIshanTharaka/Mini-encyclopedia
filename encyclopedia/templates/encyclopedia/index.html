@@ -1,0 +1,17 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+    <h1>All Pages</h1>
+
+    <ul>
+        {% for entry in entries %}
+            <a href="{% url 'entry' title=entry %}">  <li> {{ entry }}</li>  </a>
+            {% comment %} 'entry is the path in urls.py. In the path, the 'title' is the varying parameter {% endcomment %}
+        {% endfor %}
+    </ul>
+
+{% endblock %}
