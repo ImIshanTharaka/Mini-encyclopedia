@@ -1,7 +1,7 @@
 # Mini-encyclopedia
 A Wikipedia like online encyclopedia
 
-# What I learned
+## What I learned
 * Using Django to build web apps with multiple pages
 * Generating new web pages based on users input
 * Handling Django forms
